@@ -7,3 +7,8 @@
     - Fiddle with the powerline configs to tweak the status bar and the prompt.
 5. Bash mode (`set -o vi`)
 6. `noglob` alias (`alias ng=noglob`)
+
+## Devices
+1. Kinesis Advantage 2 Keyborad
+    - Map <F1> to <Esc>, since I tend to hit <F1> while in Vim, because the <Esc> key is tiny.
+2. Evoluent Vertical Mouse
