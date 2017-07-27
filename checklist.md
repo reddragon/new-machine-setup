@@ -6,7 +6,14 @@
     - https://powerline.readthedocs.io/en/latest/
     - Fiddle with the powerline configs to tweak the status bar and the prompt.
 5. Bash mode (`set -o vi`)
-6. `noglob` alias (`alias ng=noglob`)
+6. Re-Enable Reverse History Search in vi-mode: 
+
+```
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+```
+
+7. `noglob` alias (`alias ng=noglob`)
 
 ## Devices
 1. Kinesis Advantage 2 Keyborad
