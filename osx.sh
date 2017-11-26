@@ -12,3 +12,6 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 echo "Setting up nice defaults"
 # Disable the swipe navigation for Chrome
 defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
+
+# Allow a key which is depressed to emit chars continuously
+defaults write -g ApplePressAndHoldEnabled -bool false
