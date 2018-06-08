@@ -14,6 +14,19 @@ bindkey '^R' history-incremental-search-backward
 ```
 
 7. `noglob` alias (`alias ng=noglob`)
+8. Setup ~/.tmux.conf:
+    - Some basic guidelines here: https://robots.thoughtbot.com/love-hate-tmux
+    - At the very least, add vi keybindings:
+    ```
+    # act like vim
+    setw -g mode-keys vi
+    bind h select-pane -L
+    bind j select-pane -D
+    bind k select-pane -U
+    bind l select-pane -R
+    bind-key -r C-h select-window -t :-
+    bind-key -r C-l select-window -t :+
+    ```
 
 ## Devices
 1. Kinesis Advantage 2 Keyborad
