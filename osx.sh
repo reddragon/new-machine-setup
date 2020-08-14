@@ -15,3 +15,6 @@ defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool
 
 # Allow a key which is depressed to emit chars continuously
 defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Set the mouse tracking speed.
+defaults write -g com.apple.mouse.scaling 7.0
