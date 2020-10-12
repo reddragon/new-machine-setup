@@ -27,6 +27,17 @@ bindkey '^R' history-incremental-search-backward
     bind-key -r C-h select-window -t :-
     bind-key -r C-l select-window -t :+
     ```
+9. Disable the forward/backward page keys on the X220 by:
+```
+xmodmap -e 'keycode 166='
+xmodmap -e 'keycode 167='
+```
+10. In the GNOME terminal, go to Preferences and change Keyboard Shortcuts:
+  * Copy: Ctrl+C
+  * Paste: Ctrl+V
+  * New Tab: Ctrl+T
+  * New Window: Ctrl+V
+11. In the same settings above, disable the terminal bell.
 
 ## Devices
 1. Kinesis Advantage 2 Keyborad
