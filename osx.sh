@@ -6,6 +6,10 @@ brew install zsh
 brew install golang
 brew install mosh
 
+# Add brew to the PATH.
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 echo "Setting up zsh"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
