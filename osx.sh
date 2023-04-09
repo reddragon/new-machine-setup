@@ -22,3 +22,5 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Set the mouse tracking speed.
 defaults write -g com.apple.mouse.scaling 7.0
+
+printf '\e[?2004l'
