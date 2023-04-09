@@ -45,6 +45,9 @@
     - Ctrl + Tab to switch Applications immediately.
     - Ctrl + ~ to switch between windows of the same application immediately.
 1. Install NVIDIA drivers via Ubuntu Software Manager
+1. Disable extra chars when copying to the terminal:
+
+       printf '\e[?2004l'
 
 ## Devices
 1. Kinesis Advantage 2 Keyborad
