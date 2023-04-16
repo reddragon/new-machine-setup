@@ -45,9 +45,13 @@
     - Ctrl + Tab to switch Applications immediately.
     - Ctrl + ~ to switch between windows of the same application immediately.
 1. Install NVIDIA drivers via Ubuntu Software Manager
-1. Disable extra chars when copying to the terminal:
+1. Disable extra chars when copying to the terminal (Not sure if this works actually):
 
        printf '\e[?2004l'
+ 
+1. For turning off extra-intelligent path completion that escapes $ sign and other stuff:
+
+        shopt -u progcomp
 
 ## Devices
 1. Kinesis Advantage 2 Keyborad
