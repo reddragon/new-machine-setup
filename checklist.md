@@ -53,7 +53,9 @@
 
         shopt -u progcomp
 
-1. Install oh-my-zsh, powerline10k, and also set `export TERM=xterm-256color` in your ~/.zshrc. Then run `p10k configure`. Without setting `TERM`, tmux won't have the nice colors etc.
+1. Install oh-my-zsh, [powerlevel10k](https://github.com/romkatv/powerlevel10k), and also set `export TERM=xterm-256color` in your ~/.zshrc. Then run `p10k configure`. Without setting `TERM`, tmux won't have the nice colors etc.
+
+1. powerlevel10k recommends installing the fonts too. 
 
 ## Devices
 1. Kinesis Advantage 2 Keyborad
