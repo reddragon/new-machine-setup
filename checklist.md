@@ -63,6 +63,8 @@
 * conda env list, conda create --name env_name, conda activate env_name, conda deactivate env_name, conda install -c conda-forge package_name
 * Also, conda and pip don't play too well together.
 
+1. Install jupyter, notebook, jupyterlab, jupyter_http_over_ws, jupyterthemes. Set jupyter theme to Monokai using: `jt -t monokai`
+
 ## Devices
 1. Kinesis Advantage 2 Keyborad
     - Map `<F1>` to `<Esc>`, since I tend to hit `<F1>` while in Vim, because the `<Esc>` key is tiny.
