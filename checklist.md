@@ -44,7 +44,7 @@
 1. In the Keyboard option set the following screenshots:
     - Ctrl + Tab to switch Applications immediately.
     - Ctrl + ~ to switch between windows of the same application immediately.
-1. Install NVIDIA drivers via Ubuntu Software Manager
+1. Install NVIDIA drivers via Ubuntu Software Manager. Sometimes Ubuntu will self-wreck these drivers in updates. In that case, install the NVIDIA driver directly, and ignore the prompt when it says there are better compatible versions available.
 1. Disable extra chars when copying to the terminal (Not sure if this works actually):
 
        printf '\e[?2004l'
@@ -60,8 +60,8 @@
 1. Install tensorflow with the guidelines [here](https://www.tensorflow.org/install/pip). The Miniconda script should be only run via `bash`.  Rest of the steps can be run in zsh as usual.
 
 1. For complex installs, it is better to use the conda environment. Some quick commands:
-* conda env list, conda create --name env_name, conda activate env_name, conda deactivate env_name, conda install -c conda-forge package_name
-* Also, conda and pip don't play too well together.
+    - conda env list, conda create --name env_name, conda activate env_name, conda deactivate env_name, conda install -c conda-forge package_name
+    - Also, conda and pip don't play too well together.
 
 1. Install jupyter, notebook, jupyterlab, jupyter_http_over_ws, jupyterthemes. Set jupyter theme to Monokai using: `jt -t monokai`
 
