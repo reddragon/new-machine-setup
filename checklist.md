@@ -59,6 +59,10 @@
 
 1. Install tensorflow with the guidelines [here](https://www.tensorflow.org/install/pip). The Miniconda script should be only run via `bash`.  Rest of the steps can be run in zsh as usual.
 
+1. For complex installs, it is better to use the conda environment. Some quick commands:
+* conda env list, conda create --name env_name, conda activate env_name, conda deactivate env_name, conda install -c conda-forge package_name
+* Also, conda and pip don't play too well together.
+
 ## Devices
 1. Kinesis Advantage 2 Keyborad
     - Map `<F1>` to `<Esc>`, since I tend to hit `<F1>` while in Vim, because the `<Esc>` key is tiny.
