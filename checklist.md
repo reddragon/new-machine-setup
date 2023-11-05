@@ -3,7 +3,7 @@
 1. zsh (also `chsh -s /bin/zsh`)
 1. Install Lambda Labs Stack ([here](https://lambdalabs.com/lambda-stack-deep-learning-software))
 1. Console Font: Roboto Mono Light 20pt. Install the version patched for Powerline.
-1. Setup powerline and its themes for vim, tmux, zsh.
+1. Setup powerline and its themes for vim, tmux, zsh (actually maybe first install oh-my-zsh and powerlevel10k as listed below).
     - https://powerline.readthedocs.io/en/latest/
     - Fiddle with the powerline configs to tweak the status bar and the prompt.
 1. Bash mode (`set -o vi`)
@@ -58,13 +58,22 @@
 
 1. powerlevel10k recommends installing the fonts too. 
 
-1. Install tensorflow with the guidelines [here](https://www.tensorflow.org/install/pip). The Miniconda script should be only run via `bash`.  Rest of the steps can be run in zsh as usual.
+1. Install tensorflow with the guidelines [here](https://www.tensorflow.org/install/pip). The Miniconda script should be only run via `bash`.  Rest of the steps can be run in zsh as usual. You can skip this if you have installed the ML stuff through the lambda stack.
 
 1. For complex installs, it is better to use the conda environment. Some quick commands:
     - conda env list, conda create --name env_name, conda activate env_name, conda deactivate env_name, conda install -c conda-forge package_name
     - Also, conda and pip don't play too well together.
 
 1. Install jupyter, notebook, jupyterlab, jupyter_http_over_ws, jupyterthemes. Set jupyter theme to Monokai using: `jt -t monokai`
+
+1. When SSH-ing from another machine on the same network for the first time it is better to copy the keys. Use `ssh-keygen` to generate the keys, then `ssh-copy-id -i ~/.ssh/id_rsa username@hostname.local`. This assumes the key to copy is at `~/.ssh/id_rsa`.
+
+## New workstation quirks.
+1. Follow the instructions [here](https://www.pugetsystems.com/labs/hpc/how-to-use-linux-kernel-boot-options/).
+   
+1. Might need to connect via ethernet to upgrade drivers.
+
+1. Ensure physical VGA switch remains off.
 
 ## Devices
 1. Kinesis Advantage 2 Keyborad
